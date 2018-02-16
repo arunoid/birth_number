@@ -1,0 +1,37 @@
+print("This is a python birth number calculator based on your date of birth")
+
+birth_year = int(input("Enter your birth year in four digit format: ")) #enter birth year in four digit format
+x  = birth_year //1000
+x1 = (birth_year - x*1000)//100
+x2 = (birth_year - x*1000 - x1*100)//10
+x3 = birth_year - x*1000 - x1*100 - x2*10
+x4 = x+x1+x2+x3
+birth_year_total = int(x4) # inserting birth year total as int input to sum with birth month and birth date
+x6 = birth_year_total //10
+x7 = birth_year_total -x6*10
+
+print("your birth year total is" ,x6+x7)
+
+birth_month = int(input("Enter your birth month: ")) #take birth month input as int
+
+x8 = birth_month //10
+x9 = birth_month -x8*10
+
+print("your birth month total is" ,x8+x9)
+
+birth_date = int(input("Enter your birth date: ")) #take birth date input as int
+
+x10 = birth_date //10
+x11 = birth_date -x10*10
+
+print("your birth date total is" ,x10+x11)
+
+x12 = (x6+x7)+(x8+x9)+(x10+x11)
+birth_total = int(x12)
+
+x13 = birth_total //10
+x14 = birth_total -x13*10
+
+print("your birth number is" ,x10+x11)
+
+print("your birth number total is" ,x13+x14)
